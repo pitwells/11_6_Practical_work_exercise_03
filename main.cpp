@@ -15,13 +15,16 @@ std::string get_address_part (std::string ip, int octet) {
 }
 
 
+std::string address_part_valid (std::string partIp) {
+    partIp = "15";
+    return partIp;
+}
+
+
 int main() {
     std::cout << "IP Address Validation" << std::endl << std::endl;
 
-    get_address_part(ip, octet);
+    std::cout << address_part_valid(ip);
 
-    //check_valid();
-
-    std::cout << "END";
     return 0;
 }
